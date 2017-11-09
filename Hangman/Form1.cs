@@ -19,7 +19,7 @@ namespace Hangman
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //es
+            //kkkkkkkk
         }
     }
 }
