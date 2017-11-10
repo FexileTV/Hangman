@@ -12,6 +12,9 @@ namespace Hangman
 {
     public partial class Form1 : Form
     {
+
+        string currentWord = "waar";
+
         public Form1()
         {
             InitializeComponent();
@@ -19,20 +22,32 @@ namespace Hangman
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string currentWord = "wow";
             string labelText = "";
             label1.Text = "";
             for (int i = 0; i < currentWord.Length; i++)
             {
-                labelText += "_";
+                labelText += "_ ";
             }
             label1.Text = labelText.Substring(0, labelText.Length - 1);
-            //load
+            
         }
 
         private void button26_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < currentWord.Length; i++)
+            {
+                if(currentWord[i].ToString().ToLower() == "a")
+                {
+                    MessageBox.Show(i.ToString());
+                }
+            }
+        }
+
+
     }
 }
