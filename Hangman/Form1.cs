@@ -19,7 +19,20 @@ namespace Hangman
 
         private void Form1_Load(object sender, EventArgs e)
         {
-          //load
+            string currentWord = "wow";
+            string labelText = "";
+            label1.Text = "";
+            for (int i = 0; i < currentWord.Length; i++)
+            {
+                labelText += "_";
+            }
+            label1.Text = labelText.Substring(0, labelText.Length - 1);
+            //load
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
